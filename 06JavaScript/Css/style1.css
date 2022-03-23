@@ -1,0 +1,29 @@
+body{
+    background: darkcyan;
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    font-size:20px;
+  }
+  .res{
+    color:#15b0df;
+  }
+  button {
+    padding: 7px;
+    border-radius:7px;
+    font-weight: bolder;
+     background: rgb(148, 168, 34);
+    text-align: center;
+  }
+  input{
+    margin:10px;
+    padding: 7px;
+    border-radius:7px;
+    font-weight: bolder;
+     background: rgb(218, 43, 180);
+    text-align: center;
+    border: none;
+  }
+  label{
+     color :rgb(184, 212, 22);
+  }

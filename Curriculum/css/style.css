@@ -1,0 +1,122 @@
+#principal {
+    border: solid 1px #cccccc;
+    padding: 5px;
+    margin: 0 auto;
+    width: 85%;
+    background: lightgreen;
+
+}
+
+:root{
+    --primary-color : hsl(214, 84%, 56%);
+    --text-color: hsl(0, 0%, 31%);
+    --bg-color: hsl(0, 0%, 90%);
+    --bg-card-color: hsl(0, 0%, 98%);
+    --border-radius: 0.4em;
+    --transition: color 0.1s, background-color 0.2s ease-in-out; 
+    --skills-bar-length: 0%;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+legend {
+    border: solid 1 px royalblue;
+    padding: 5px;
+    font-weight: bold;
+    background: yellowgreen;
+    border-radius: 15px;
+
+}
+
+#RSIFoto{
+    border: solid 2px;
+    margin: 10px;
+}
+
+body {
+    background-color: rgb(198, 201, 204);
+}
+
+.Skills{
+    padding: 1em 0;
+}
+
+.skills_header {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: auto;
+}
+
+.skills_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills_bar,
+.skills_bar::after{   
+    position: relative;
+    width: 500px;
+    height: 8px;
+    background-color: #888;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.skills_bar::after{
+    content: "";
+    position: absolute;
+    left: -500px;
+    background-color: var(--primary-color);
+    transition: var(--transitions);
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+.skills_bar--10::after{
+    --skills-bar-leght:10%;
+}
+
+.skills_bar--20::after{
+    --skills-bar-leght:20%;
+}
+
+.skills_bar--30::after{
+    --skills-bar-leght:30%;
+}
+
+.skills_bar--40::after{
+    --skills-bar-leght:40%;
+}
+
+.skills_bar--50::after{
+    --skills-bar-leght:50%;
+}
+
+.skills_bar--60::after{
+    --skills-bar-leght:60%;
+}
+
+.skills_bar--70::after{
+    --skills-bar-leght:70%;
+}
+
+.skills_bar--80::after{
+    --skills-bar-leght:80%;
+}
+
+.skills_bar--90::after{
+    --skills-bar-leght:90%;
+}
+
+.icon{
+    margin-right: 1em;
+}
+
+@keyframes skills-bar-fill {
+    to{
+        transform: translateX(var(--skills-bar-leght));
+    }
+}

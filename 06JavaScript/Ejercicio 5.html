@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JavaScript</title>
+    <link rel="stylesheet" href="../06JavaScript/Css/style5.css">
+</head>
+<body>
+    <form name="formulario" method="post" action="">
+
+        <label>Obtener la calificación final en la materia Algoritmos
+
+            <br>
+            <table>
+                <tr>
+                    <td>Introduce el numero de Hombres</td>
+                    <td><input type="text" name="t1" id="t1" onkeypress="return validarn(event)" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Introduce el numero de Mujeres</td>
+                    <td><input type="text" name="t2" id="t2" onkeypress="return validarn(event)" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Calcular Porcentaje" name="enviar" onclick="porcentaje()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>El porcentaje de Hombre es de</td>
+                    <td><input type="text" name="a" id="a" readonly="readonly" class="input_text"></td>
+                </tr>
+                
+                <tr>
+                    <td>El porcentaje de mujeres es de </td>
+                    <td><input type="text" name="e" id="e" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrard()"></td>
+                </tr>
+            </table>
+        </label>
+
+    </form>
+<script src="../06JavaScript/JS/Porcentaje.js"></script>
+</body>
+</html>

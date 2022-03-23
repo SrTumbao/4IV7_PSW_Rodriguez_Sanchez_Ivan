@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html class="avada-html-layout-wide avada-html-header-position-top avada-is-100-percent-template" lang="es-MX" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Calculadora de Interés Compuesto </title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script type="text/javascript" src="js/operaciones.js"></script>
+<meta name='robots' content='max-image-preview:large' />
+
+
+
+</head>
+
+<body>
+<h1>Calculadora de Interés Compuesto</h1>
+    <div class="container full-container">
+        <div class="income_savings">
+            <div class="group">
+                <div>
+                    <label for="initial_balance">► Depósito Inicial</strong>:</label>
+                </div>
+                <div class="group_box">
+                    <input type="text" id="initial_balance" value="" required="required" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$">
+                    <span>Con cuanto inicias</span></div>
+            </div>
+            <div class="group">
+                <div>
+                    <label for="annual_savings">► Aportación mensual a la Inversión:</label>
+                </div>
+                <div class="group_box">
+                    <input type="text" id="annual_savings" value="" required="required" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$">
+                    <span>Cuanto se pagara cada mes</span></div>
+            </div>
+            <div class="group">
+                <div>
+                    <label for="increase_contribution">► Interes</label>
+                </div>
+                <div class="group_box">
+                    <input type="text" id="increase_contribution" value="" required="required" pattern="^[+-]?(\d+|\d+[.]\d+)%?$">
+                    <span>Por la inflación este sera de 3.94$</span></div>
+            </div>
+            <div class="group">
+                <div>
+                    <label for="analysis_year">► Número de Mesesde Inversión:</label>
+                </div>
+                <div class="group_box">
+                    <input type="text" id="analysis_year" value="" required="required" pattern="^([1-9]|[1-5][0-9]|60)$">
+                    <span>En cuanto tiempo terminaras de pagar (3,6,9,12,18)</span></div>
+            </div>
+            <div class="group">
+                <div>
+                    <label for="before_tax">
+                        <strong>► Rendimiento (similar al interes)</label>
+                </div>
+                <div class="group_box">
+                    <input type="text" id="before_tax" value="" required="required" pattern="^[+-]?(\d+|\d+[.]\d+)%?$">
+                    <span></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="calculation">
+        <button onclick="calculation_retirement()" id="calculation">Calcular</button>
+    </div>
+    <hr>
+
+    <div class="result_comment inactive" id="result_comment">
+
+    </div>
+    <div class="table_result inactive" id="table_result">
+        <h2>Tabla de Resultados</h2>
+        <hr>
+        <div class="table-responsive">
+            <table id="detailed_table">
+                <thead id="table_header">
+                    <tr>
+                        <th>Año</th>
+                        <th>Saldo Inicial</th>
+                        <th>Aportación</th>
+                        <th>Rendimiento</th>
+                        <th>Saldo Final</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <div class="compound_chart inactive" id="compound_chart">
+        <h2>Comparación entre Ahorro e Inversión</h2>
+        <hr>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://www.investorhouse.com.mx/calc/calculadora-interes-compuesto/chart.js@2.8.0.js"></script>
+    <script src="https://www.investorhouse.com.mx/calc/calculadora-interes-compuesto/jquery.js"></script> </body>
+<script src="https://www.investorhouse.com.mx/calc/calculadora-interes-compuesto/form.js"></script>
+<script src="https://www.investorhouse.com.mx/calc/calculadora-interes-compuesto/main.js"></script>
+<p>
+		</body>
+</html>
+

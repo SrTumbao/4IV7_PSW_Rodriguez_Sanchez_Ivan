@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JavaScript 2</title>
+    <link rel="stylesheet" href="../06JavaScript/Css/style2.css">
+</head>
+<body>
+    <form name="formulario" method="post" action="">
+
+        <label>Obtener el sueldo y la comision
+
+            <br>
+            <table>
+                <tr>
+                    <td>Introduce tu sueldo</td>
+                    <td><input type="text" name="sueldo" onkeypress="return validarn(event)" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Introduce la camtidad de ventas</td>
+                    <td><input type="text" name="cantidadv" onkeypress="return validarn(event)" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Calcular comision" name="borrar" onclick="comision()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Su comisión  es de:</td>
+                    <td><input type="text" name="porcentaje" id="cantidadI" readonly="readonly" class="input_text"></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Calcular Sueldo final" name="borrar" onclick="final()">                    
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Su sueldo final es de:</td>
+                    <td><input type="text" name="sueldoC" id="cantidadI" readonly="readonly" class="input_text"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Borrar Datos" name="borrar" onclick="borrard()">
+                    </td>
+                </tr>
+            </table>
+        </label>
+
+    </form>
+<script src="../06JavaScript/JS/comision.js"></script>
+</body>
+</html>

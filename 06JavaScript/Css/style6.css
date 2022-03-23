@@ -1,0 +1,43 @@
+body{
+    background: olivedrab;
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    font-size:20px;
+  }
+  #salida  {
+     background: rgb(182, 240, 182);
+     margin:20px  15em;
+     padding:5px;
+     font-size:25px;
+  }
+  .res{
+    color:#15b0df;
+  }
+  #salidaA{
+    padding: 10px;
+    background: rgb(68, 9, 163);
+     margin:20px  15em;
+  }
+  button {
+    padding: 7px;
+    border-radius:7px;
+    font-weight: bolder;
+     background: rgb(163, 117, 86);
+    text-align: center;
+  }
+  input{
+    margin:10px;
+    padding: 7px;
+    border-radius:7px;
+    font-weight: bolder;
+     background: rgb(103, 101, 231);
+    text-align: center;
+    border: none;
+  }
+  span{
+    color:brown;
+  }
+  label{
+     color :rgb(250, 240, 175);
+  }

@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  justify-content: center;
+  background-color: #76e9d9;
+  margin: 0 auto;
+  font-family: sans-serif;
+  margin-bottom: 20px; }
+
+body h1 {
+  text-align: center; }
+
+body p {
+  text-align: center;
+  color: #333333;
+  margin: 0px; }
+
+body .full-container {
+  width: 100%; }
+
+body .container {
+  display: flex;
+  padding-top: 27px; }
+
+body .container .income_savings {
+  width: 100%;
+  display: block;
+  padding-left: 20%; }
+
+body .container .income_savings h2 {
+  text-decoration: underline; }
+
+body .container .income_savings .group {
+  color: #000000;
+  align-items: center;
+  line-height: 23px;
+  padding-left: 8px;
+  padding-bottom: 15px; }
+
+body .container .income_savings .group .group_box {
+  display: flex;
+  width: 100%;
+  padding-top: 5px;
+  align-items: center; }
+
+body .container .income_savings .group .group_box label {
+  color: #131111; }
+
+body .container .income_savings .group .group_box input {
+  padding: 10px 2px;
+  width: 150px;
+  border: 1px solid lightgray;
+  margin-right: 7%;
+  display: block; }
+
+body .container .income_savings .group .group_box span {
+  color: #555555; }
+
+body .calculation {
+  text-align: left;
+  padding-left: 20%;
+  width: 44.6%; }
+
+body .calculation button {
+  background: #9FC348;
+  color: #333333;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none; }
+
+body .result_comment {
+  display: block; }
+
+body .result_comment h2 {
+  font-size: 25px;
+  margin-bottom: -6px; }
+
+body .result_comment hr {
+  border: 1px solid #da1c1c;
+  width: 91px;
+  display: inline-block; }
+
+body .result_comment p {
+  color: #000000; }
+
+body .compound_chart h2 {
+  margin-bottom: -6px; }
+
+body .compound_chart hr {
+  border: 1px solid #da1c1c;
+  width: 75px;
+  display: inline-block; }
+
+body .table_result {
+  display: block; }
+
+body .table_result .table-responsive {
+  overflow: auto; }
+
+body .table_result thead tr {
+  background: #8DC044;
+  color: #111111; }
+
+body .table_result thead tr th {
+  text-align: center; }
+
+body .table_result thead tr:hover {
+  background-color: #f5f5f5;
+  color: black; }
+
+body .table_result h2 {
+  font-size: 25px;
+  margin-bottom: -6px; }
+
+body .table_result hr {
+  border: 1px solid #da1c1c;
+  width: 227px;
+  display: inline-block; }
+
+body .table_result table {
+  border-collapse: collapse;
+  width: 100%; }
+
+body .table_result table th {
+  font-size: 14px;
+  border: 1px solid #ddd;
+  padding: 15px; }
+
+body .table_result table td {
+  padding: 15px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  text-align: right;
+  line-height: 2px; }
+
+body .table_result table tr:hover {
+  background-color: #f5f5f5; }
+
+body .inactive {
+  display: none; }
+
+body input[aria-invalid="true"] {
+  border: 1px solid #f00;
+  box-shadow: 0 0 4px 0 #f00; }
+
+@media screen and (max-width: 1300px) {
+  body .container .income_savings {
+    padding-left: 0px; }
+
+  body .container .income_savings .group .group_box {
+    display: block; }
+
+  body .container .income_savings .group .group_box input {
+    width: 100%; }
+
+  body .calculation {
+    width: 100%;
+    padding-left: 0px; } }
